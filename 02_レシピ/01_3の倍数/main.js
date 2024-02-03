@@ -39,22 +39,24 @@ const genkifunction = function (number) {
 }
 genkifunction(100)
 */
-let count = 0
+//let count = 0
 
 const genkifunction = function (number) {
-  for (let n = 1; n <= number; n++) {
-    const countUp = () => {
-      if (n % 3 === 0) {
-        console.log(n + "!!!!!!!!")
-      } else {
-        console.log(n)
-      }
-      return (count += 1)
-    }
-
-    setInterval(countUp, 1000)
+  for (let i = 1; i <= number; i++) {
+    //const countUp = () => {
+    setTimeout(displaynumber, 1000 * i, i)
   }
+  const displaynumber = function (i) {
+    if (i % 3 === 0) {
+      console.log(i + "!!!!!!!!")
+    } else {
+      console.log(i)
+    }
+    //return (count += 1)
+  }
+  //setInterval(countUp, 1000)
 }
+//}
 genkifunction(100)
 
 /*

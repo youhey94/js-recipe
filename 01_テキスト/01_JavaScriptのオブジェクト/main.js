@@ -1,17 +1,19 @@
-const hikakin = {
-  name: "ヒカキン",
-  age: 24,
-  hobbies: ["ゲーム", "動画編集", "猫と遊ぶこと"],
+const me = {
+  name: "よーへい",
+  age: 23,
+  hobbies: ["ゲーム", "ドライブ", "カクテル作り", "料理"],
   isHappy: true,
   address: {
     country: "日本",
-    city: "東京",
+    city: "滋賀",
   },
   sayHello: function () {
-    console.log("ブンブンハロー YouTube")
+    console.log("温泉がない方の草津にいます")
   },
 }
 
+console.log(me)
+me.sayHello()
 // TRY: 練習問題１
 // hikakin オブジェクト を真似して自分のプロフィールをオブジェクトで作ってください。
 // オブジェクトにはたくさんのプロパティを追加してください。

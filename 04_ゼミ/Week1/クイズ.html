@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="Quiz">
+      <h1 id>島根の県庁所在地はどこでしょう？</h1>
+
+      <button id="choice1">出雲</button>
+      <button id="choice2">島根</button>
+      <button id="choice3">松江</button>
+    </div>
+    <h2 id="after"></h2>
+    <script>
+      const quiz = document.getElementById("Quiz")
+      const button1 = document.getElementById("choice1")
+      const button2 = document.getElementById("choice2")
+      const button3 = document.getElementById("choice3")
+      const after = document.getElementById("after")
+
+      button1.onclick = function () {
+        //console.log()
+        after.textContent = "出雲大社ね！不正解です"
+        console.log(after)
+      }
+      button2.onclick = function () {
+        //console.log()
+        after.textContent = "不正解です"
+        console.log(after)
+      }
+      button3.onclick = function () {
+        //console.log()
+        after.textContent = "大正解です！！"
+        console.log(after)
+        quiz.remove()
+      }
+    </script>
+  </body>
+</html>
